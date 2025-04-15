@@ -64,6 +64,4 @@ The course concludes with a final project, which involves building a multi-page 
 
 ---
 
-> **Note:** This repository is part of an academic project. All content is original unless stated otherwise. Plagiarism is strictly prohibited.
-
 
