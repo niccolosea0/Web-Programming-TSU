@@ -1,4 +1,4 @@
-# Web Programming – University Project Repository
+# Web Programming – University 
 
 Welcome to the official repository for my **Web Programming** course at Tbilisi State University (Course Code: CS202). This repository contains my coursework, assignments, and project files developed throughout the semester as part of my Computer Science Bachelor's degree.
 
