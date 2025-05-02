@@ -31,6 +31,17 @@ li {
   /* cursor: pointer; */
   background: pink;
 }
+
+.scroll-up {
+  /* display: none; */
+  /* visibility: hidden; */
+  position: fixed;
+  bottom: 1.43rem;
+  right: 1.197%;
+  font-size: 60px;
+  font-weight: bold;
+  color: #44006e;
+}
 /* end of global */
 /* index */
 #header {
@@ -42,6 +53,16 @@ li {
   width: 100%;
   text-align: center;
   background-color: #dbf4e2;
+  position: relative;
+}
+
+#header .prom-block .prom-block__close {
+  position: absolute;
+  top: 1.43rem;
+  right: 1.197%;
+  border: 0;
+  background: none;
+  cursor: pointer;
 }
 
 #header .prom-block .prom-block__title {
@@ -74,5 +95,59 @@ li {
   background-size: contain;
   /* font-size: 0; */
   text-indent: -9999px;
+}
+.header-block__nav-main-menu {
+  /* width: 20px;
+  height: 10px; */
+  background: #2ebb77;
+  overflow: hidden;
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
+}
+.header-block__nav-main-menu li {
+  /* display: inline-block; */
+  background: #ffc;
+  float: left;
+}
+
+/* product list */
+.product-list__item-paragraph {
+  max-height: 6rem;
+  color: #7e7e7e;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  overflow: hidden;
+}
+
+/* slider block */
+.slider-block {
+  width: 57.36%; /* 826px */
+  max-height: 46.75rem;
+  background: #ffc;
+}
+.slider-block__img {
+  width: 74.57%;
+  height: 18.31rem;
+  background: rgb(0, 109, 160);
+  margin-left: 19%;
+}
+
+.slider-block__colors {
+  background: #fff;
+  overflow: hidden;
+}
+
+.slider-block__colors li {
+  float: left;
+  margin-right: 0.93rem;
+}
+
+.slider-block__colors li button {
+  width: 1.93rem;
+  height: 2.18rem;
+  font-size: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #b57bd9;
 }
 /* end of index */

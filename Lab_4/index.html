@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div id="header">
+    <header id="header">
       <!-- style="background-color: green; color: pink;"  -->
-      <div class="prom-block">
+      <section class="prom-block">
         <div class="center">
           <h2 class="prom-block__title">
             <img
@@ -27,12 +27,12 @@
             Free shipping on all U.S. orders $50+
             <button class="prom-block__title-btn">Shop Now</button>
           </h2>
-          <button>
-            <img src="images/close.png" alt="close button" />
+          <button class="prom-block__close">
+            <img src="images/close.png" alt="colse button" />
           </button>
         </div>
-      </div>
-      <div class="header-block">
+      </section>
+      <section class="header-block">
         <div class="center">
           <h1 class="header-block__title">
             <a href="index.html" class="header-block__title-link">
@@ -40,7 +40,7 @@
             </a>
           </h1>
 
-          <div class="header-block__nav">
+          <nav class="header-block__nav">
             <ul class="header-block__nav-main-menu">
               <li>
                 <a href="index.html">Home</a>
@@ -61,7 +61,7 @@
             <button class="header-block__nav-search">
               <img src="images/Icon.png" alt="search" />
             </button>
-          </div>
+          </nav>
 
           <ul class="header-block__actions">
             <li class="header-block__actions-card">
@@ -79,7 +79,62 @@
             </li>
           </ul>
         </div>
-      </div>
-    </div>
+      </section>
+    </header>
+    <main>
+      <section>
+        <div class="center slider-block">
+          <div class="slider-block__info"></div>
+          <div class="slider-block__image-container">
+            <div class="slider-block__img">img</div>
+            <ul class="slider-block__colors">
+              <li><button>change color</button></li>
+              <li><button>change color</button></li>
+              <li><button>change color</button></li>
+              <li><button>change color</button></li>
+            </ul>
+            <div class="slider-block__product">product</div>
+            <div class="slider-block__products-amout">products amout</div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="center product-list">
+          <div class="product-list__item product-list__item--blue">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p class="product-list__item-paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Explicabo doloribus commodi assumenda obcaecati culpa dolor autem
+              necessitatibus ipsam nam numquam eaque, voluptates atque enim cum
+              quam vitae saepe illum pariatur? Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Explicabo doloribus commodi
+              assumenda obcaecati culpa dolor autem necessitatibus ipsam nam
+              numquam eaque, voluptates atque enim cum quam vitae saepe illum
+              pariatur? Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Explicabo doloribus commodi assumenda obcaecati culpa dolor
+              autem necessitatibus ipsam nam numquam eaque, voluptates atque
+              enim cum quam vitae saepe illum pariatur?
+            </p>
+          </div>
+          <div class="simple-product">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p class="product-list__item-paragraph">
+              Lorem ipsum dolor sit amet, c <span>...</span>
+            </p>
+          </div>
+          <div class="simple-product">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p class="product-list__item-paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Explicabo doloribus commodi assumenda obcaecati culpa dolor autem
+              necessitatibus ipsam nam numquam eaque, voluptates atque enim cum
+              quam vitae saepe illum pariatur?F
+            </p>
+          </div>
+        </div>
+      </section>
+      <a href="#header" class="scroll-up">&#8682;</a>
+    </main>
+    <footer></footer>
   </body>
 </html>
