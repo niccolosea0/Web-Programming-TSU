@@ -4,6 +4,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* 
+nav ~ ul {
+  margin-bottom: 100px;
+}
+
+nav + ul {
+  margin-bottom: 100px;
+} */
 
 a {
   text-decoration: none;
@@ -42,8 +50,29 @@ li {
   font-weight: bold;
   color: #44006e;
 }
+
+@font-face {
+  font-family: "ALK Life";
+  src: url("../fonts/alk-life-webfont.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/alk-life-webfont.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/alk-life-webfont.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/alk-life-webfont.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/alk-life-webfont.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/alk-life-webfont.svg#alk_liferegular") format("svg"); /* Legacy iOS */
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); */
+
 /* end of global */
 /* index */
+
+span {
+  font-family: "ALK Life";
+}
+
 #header {
   width: 100%;
   background: #ffc;
@@ -134,11 +163,25 @@ li {
 
 .slider-block__colors {
   background: #fff;
-  overflow: hidden;
+  overflow: visible;
+  position: relative;
+}
+
+.slider-block__colors::after {
+  content: " ";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 2.18rem;
+  bottom: -10px;
+  transform: rotate(45deg);
+  background-color: pink;
 }
 
 .slider-block__colors li {
-  float: left;
+  display: inline-block;
+  /* float: left; */
   margin-right: 0.93rem;
 }
 
@@ -150,4 +193,27 @@ li {
   border-radius: 50%;
   background: #b57bd9;
 }
+
+.slider-block__colors li:first-child button {
+  background: #6e0000;
+}
+
+.slider-block__colors li:nth-child(3n + 1) {
+  background: #ffc;
+  margin-right: 100px;
+}
+
+.slider-block__colors li:nth-child(2n + 1) {
+  background: #ffc;
+  margin-right: 100px;
+}
+
 /* end of index */
+
+ul:first-of-type {
+  background: #000;
+}
+
+img[src*="Icon"] {
+  margin-bottom: 100px;
+}
