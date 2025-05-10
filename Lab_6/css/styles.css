@@ -1,0 +1,282 @@
+/* global */
+/* @import url("https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap"); */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* nav ~ul{
+margin-bottom: 1000px;
+}
+nav +ul{
+margin-bottom: 1000px;
+} */
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2ebb77;
+}
+
+li {
+  list-style-type: none;
+}
+
+:root {
+  font-size: 16px;
+}
+
+.center {
+  width: 75%;
+  max-width: 1440px;
+  /* margin-left: 12.5%;
+    margin-right: 12.5%; 
+    margin: 0 12.5%;*/
+  margin: 0 auto;
+  /* cursor: pointer; */
+  background: pink;
+}
+
+.scroll-up {
+  /* display: none; */
+  /* visibility: hidden; */
+  position: fixed;
+  bottom: 1.43rem;
+  right: 1.197%;
+  font-size: 60px;
+  font-weight: bold;
+  color: #44006e;
+}
+
+@font-face {
+  font-family: "ALK Life";
+  src: url("../fonts/alk-life-webfont.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/alk-life-webfont.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/alk-life-webfont.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/alk-life-webfont.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/alk-life-webfont.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/alk-life-webfont.svg#alk_liferegular") format("svg"); /* Legacy iOS */
+}
+/* end of global */
+/* index */
+span{
+  /* font-family: "ALK Life"; */
+}
+#header {
+  width: 100%;
+  background: #ffc;
+  /* font-family: "Tagesschrift", system-ui;
+ */ /* linked font import*/
+}
+/* promo block */
+#header .prom-block {
+  width: 100%;
+  text-align: center;
+  background-color: #dbf4e2;
+  position: relative;
+}
+
+#header .prom-block .prom-block__close {
+  position: absolute;
+  top: 1.43rem;
+  right: 1.197%;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+#header .prom-block .prom-block__title {
+  color: #000;
+  font-size: 1.125rem;
+  line-height: 1.38;
+}
+
+/* header */
+#header .header-block {
+  width: 100%;
+}
+
+#header .header-block .center {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 1.97%;
+}
+
+#header .header-block .header-block__title {
+  width: 11.25rem;
+  height: 3rem;
+}
+#header .header-block .header-block__title a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgb(230, 192, 255) url(../images/logo-black.png.png) no-repeat
+    center center;
+  background-size: contain;
+  /* font-size: 0; */
+  text-indent: -9999px;
+}
+.header-block__nav-main-menu {
+  /* width: 20px;
+  height: 10px; */
+  background: #2ebb77;
+  overflow: hidden;
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
+}
+.header-block__nav-main-menu li {
+  /* display: inline-block; */
+  background: #ffc;
+  float: left;
+}
+
+/* product list */
+.product-list__item-paragraph {
+  max-height: 6rem;
+  color: #7e7e7e;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  overflow: hidden;
+}
+
+/* slider block */
+.slider-block {
+  width: 57.36%; /* 826px */
+  max-height: 46.75rem;
+  background: #ffc;
+}
+.slider-block__img {
+  width: 74.57%;
+  height: 18.31rem;
+  background: rgb(0, 109, 160);
+  margin-left: 19%;
+}
+
+.slider-block__colors {
+  background: #fff;
+  /* overflow: hidden; */
+  position: relative;
+}
+
+.slider-block__colors:after{
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 2.18rem;
+  bottom: -10px;
+  transform: rotate(45deg);
+  background-color: rgb(255, 255, 255);
+}
+
+.slider-block__colors li {
+  display: inline-block;
+  /* float: left; */
+  margin-right: 0.93rem;
+}
+
+.slider-block__colors li button {
+  width: 1.93rem;
+  height: 2.18rem;
+  font-size: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #b57bd9;
+}
+
+.slider-block__colors li:first-child button{
+  background: #ff1212;
+}
+
+.slider-block__colors li:nth-child(3n+1){
+  background: #ffc;
+  margin-right: 100px;
+}
+
+.slider-block__colors li:nth-child(2n+1){
+  background: #ffc;
+  margin-right: 100px;
+}
+/* end of index */
+
+/* ul:first-of-type{
+  background: #000;
+}
+
+img[src*='Icon'] {
+  margin-bottom: 500px;
+} */
+
+.test-nav {
+  background-color: #ffc;
+}
+
+.test-nav li{
+  display: inline-block;  
+}
+
+.test-nav li a{
+  color: #ff1212;
+  background-color: pink;
+  padding: 50px;
+  transition: all 1s ease-in-out;
+}
+
+.test-nav li a:hover{
+  border-bottom: 2px solid #44006e;
+}
+
+@media screen and (max-width: 1366px) {
+  body{
+    background-color: pink;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body{
+    background-color: rgb(14, 255, 231);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  body{
+    background-color: rgb(200, 19, 255);
+  }
+}
+
+/* @media screen and (max-width: 768px)and (orientation: portrait)  {
+  body{
+    background-color: rgb(116, 0, 19);
+  }
+} */
+
+@media screen and (max-width: 480px) {
+  body{
+    background-color: rgb(34, 255, 59);
+  }
+}
+
+/* @media screen and (max-width: 480px) and (orientation: landscape) {
+  body{
+    background-color: rgb(116, 0, 19);
+  }
+} */
+
+@media screen and (max-width: 360px) {
+  body{
+    background-color: rgb(114, 116, 0);
+  }
+}
+/* 
+@media print {
+	.test-nav{
+    display: none;
+  }
+} */

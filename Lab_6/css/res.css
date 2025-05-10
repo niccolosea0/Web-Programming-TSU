@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+/* Exact width */
+@media (width: 360px) {
+  div {
+    color: red;
+  }
+}
+/* Media query */
+@media screen and (min-width: 900px) {
+  div {
+    color: red;
+  }
+}
+
+/* Minimum width */
+@media (min-width: 35rem) {
+  div {
+    background: yellow;
+  }
+}
+
+/* Maximum width */
+@media (max-width: 50rem) {
+  div {
+    border: 2px solid blue;
+  }
+}
+/* Exact height */
+@media (height: 360px) {
+  div {
+    color: red;
+  }
+}
+
+/* Minimum height */
+@media (min-height: 25rem) {
+  div {
+    background: yellow;
+  }
+}
+
+/* Maximum height */
+@media (max-height: 40rem) {
+  div {
+    border: 2px solid blue;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  div {
+    border: 2px solid blue;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  div {
+    border: 2px solid blue;
+  }
+}
+/* Exact resolution */
+@media (resolution: 150dpi)  {
+  p {
+    color: red;
+  }
+}
+
+/* Minimum resolution */
+@media (min-resolution: 72dpi) {
+  p {
+    font-size: 1.5em;
+  }
+}
+
+/* Maximum resolution */
+@media (max-resolution: 300dpi) {
+  p {
+    background: yellow;
+  }
+}
+@media print {
+	header{
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 360px) {
+  .original{
+    background: pink;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .original{
+    background: #000;
+    height: 800px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .original{
+    background: yellow;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .original{
+    background: rgb(0, 129, 96);
+  }
+}
+
+
+@media screen and (min-width: 360px) {
+  .original{
+    background: rgb(0, 129, 96);
+  }
+}
+@media screen and (min-width: 480px) {
+  
+}
+@media screen and (min-width: 768px) {
+  
+}
+@media screen and (min-width: 960px) {
+  .original{
+    background: rgb(108, 0, 129);
+  }
+}
+@media screen and (min-width: 1024px) {
+  
+}
+@media screen and (min-width: 1366px) {
+  
+}
+
+@media screen and (max-width: 1366px) {
+  
+}
+
+@media screen and (max-width: 1024px) {
+  
+}

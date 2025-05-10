@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	min-height: 2000px;
+	background: pink;
+}
+.transitions{
+	width: 100%;
+	height: 100%;
+	border: 1px solid yellow;
+	background: green;
+}
+.transitions div{
+	width: 100px;	
+	color: #fff;
+	line-height: 20px;
+	text-align: center;
+	margin: 50px auto;
+	border-radius: 6px;
+	background: #d10000;
+}
+.transitions:hover div{
+	width: 850px;
+}
+.transitions div.ease{
+	transition: all 3s ease 5s;
+	/*transition-delay: 3s;
+	transition-duration: 3s;
+	transition-property: all;
+	transition-timing-function: ease;*/
+}
+.transitions div.linear{
+	transition: all 8s linear 0s;
+}
+.transitions div.easein{
+	transition: all 13s ease-in 1s;
+}
+.transitions div.easeout{
+	transition: all 15s ease-out 2s;
+}
+.transitions div.easeinout{
+	transition: all 3s ease-in-out 5s;
+}
+/*transitionMargin*/
+.transitionMargin{
+	width: 150px;
+	height: 150px;
+	background: red;
+	border-radius: 6px;
+	margin-left: 0px;
+	-webkit-transition: margin-left 3s linear, background 2s ease 3s;
+	-moz-transition: margin-left 3s linear, background 2s ease 3s;
+	transition: margin-left 3s linear, background 2s ease 3s;
+}
+body:hover .transitionMargin{
+	margin-left: 90%;
+	background: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
