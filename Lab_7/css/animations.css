@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+.original, .box{
+	border-radius: 6px;
+}
+.original{
+	width: 50%;
+	height: 500px;
+	background: #eaeaed;
+	border: 1px solid #cecfd5;
+	margin: 150px auto;
+}
+.box{	
+	display: block;
+	width: 60%;
+	height: 350px;
+	line-height: 350px;
+	text-align: center;
+	vertical-align: middle;
+	margin: 75px auto;
+	background: #2db34a;
+	/*opacity: 0;
+	animation*/
+	animation-name: labAnim;
+	animation-duration: 2s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate; /* reverse,alternate,alternate-reverse */
+	animation-timing-function:linear; /* ease, linear, ease-in, ease-out, ease-in-out, cubic-bezier(n,n,n,n) */
+	animation-fill-mode:forwards; /* forwards, backwards, both */	
+}
+
+@keyframes labAnim {
+	0%{
+		opacity: 0;
+		background-color: aqua;
+		box-shadow: 0px 0px 10px #000;
+	}
+	15%{
+		opacity: 1;
+		
+	}
+	50%{
+		transform:scale(1.8);
+		box-shadow: 0px 0px 50px #000;
+	}
+	100%{
+		background-color: yellowgreen;
+	}
+}
+
+@keyframes myAnimation1{
+	from{
+		transform:  rotate(0deg);
+		background: pink;
+	}
+	to{
+		transform:  rotate(360deg);
+		background: linear-gradient(to left top, red,orange,yellow,green,blue,indigo,violet);
+	}
+}
+@keyframes myAnimation2{
+	0%{
+		opacity: 0;
+	}
+	20%{
+		opacity: 0.2;
+	}
+	40%{
+		opacity: 0.4;
+		background: #000;
+	}
+	60%{
+		opacity: 0.6;
+	}
+	80%{
+		opacity: 0.8;
+		background: yellow;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes myAnimation3{
+	0%{
+		background: pink;
+	}
+	100%{
+		background: yellow;
+	}
+}
+
+
+.test-box {
+	background: #2db34a;
+	height: 700px;
+	line-height: 500px;
+	text-align: center;
+	width: 500px;
+  /* background: red;
+  background: -webkit-linear-gradient(red,orange,yellow,green,blue,indigo,violet);
+  background: -o-linear-gradient(red,orange,yellow,green,blue,indigo,violet);
+  background: -moz-linear-gradient(red,orange,yellow,green,blue,indigo,violet); */
+  background: linear-gradient(to left top, red,orange,yellow,green,blue,indigo,violet); 
+  }
+  .test-box {	
+	  background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+	background: linear-gradient(-65deg,red, blue); /* Standard syntax */
+  }
+  .test-box {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 50px, rgba(0, 0, 0, 0)); /* Standard syntax */
+   
+  }
+  .box-3{
+	background: linear-gradient(to bottom right, silver , pink); /* Standard syntax */	
+  }
+  .box-4{
+	background: linear-gradient(to left top, silver , pink); /* Standard syntax */
+  }
+  .test-box {
+	  background: radial-gradient(red, green, blue); /* Standard syntax */
+	  background-image: radial-gradient(circle, red, yellow, green); /*circle or ellipse*/
+	  /* background-image: repeating-radial-gradient(red, yellow 10%, green 15%);*/
+	  background-image: radial-gradient(closest-side at 60% 55%, red, green, blue); 
+  }
+  
+  @media print {
+	/* .box{
+		display: none;
+	}*/
+  } 
+  
+  @media screen and (min-width: 360px) {
+	.original{
+	  background: pink;
+	}
+  }
+  
+  
+  @media screen and (min-width: 360px) {
+	.original{
+	  background: pink;
+	}
+  }
+  
+  @media screen and (min-width: 640px) {
+	.original{
+	  background: #000;
+	  height: 800px;
+	}
+  }
+  
+  @media screen and (min-width: 768px) {
+	.original{
+	  background: yellow;
+	}
+  }
+  
+  @media screen and (min-width: 1024px) and (orientation: landscape) {
+	.original{
+	  background: rgb(0, 129, 96);
+	}
+  }

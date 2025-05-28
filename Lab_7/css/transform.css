@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+.line{
+	width:80%;
+	margin: auto;
+	overflow: hidden;
+}
+.original,.box {
+  border-radius: 6px;  
+}
+.original {
+  background: #eaeaed;
+  border: 1px solid #cecfd5;
+	float: left;
+	margin: 50px 50px;
+}
+.box {
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	vertical-align: middle;
+	background: #2db34a;
+	text-align: center;
+	margin: 50px 50px;
+}
+/**/
+.box-1:hover{
+	transform: rotate(20deg);
+}
+.box-2:hover{
+	transform: rotate(-20deg);
+}
+.box-rotate{
+	transform: rotate(45deg);
+}
+.box-rotate span{
+	display: inline-block;
+	transform: rotate(-45deg);
+}
+/**/
+.box-3:hover{
+	/*transform:scale(-0.75);*/
+	transform:scale(0.75);
+}
+.box-4:hover{
+	transform:scale(1.75);
+}
+/**/
+.box-5:hover{
+	transform:translateX(-10px);
+}
+.box-6:hover{
+	transform:translateY(25%)
+}
+.box-7:hover{
+	transform:translate(-10px, 25%)
+}
+/**/
+.box-8:hover{
+	transform:skewX(-5deg);
+}
+.box-9:hover{
+	transform:skewY(-25deg);
+}
+.box-10:hover{
+	transform:skew(5deg, -25deg);
+}
+.box-skew{
+	transform:skewX(10deg);
+}
+.box-skew span{
+	display: inline-block;
+	transform:skewX(-10deg);
+}
+/**/
+.box-11:hover{
+	transform: rotate(25deg) scale(.75);
+}
+.box-12:hover{
+	transform:skew(5deg, -25deg) translate(20px);
+}
+
+/* .box {
+	background: #2db34a;
+	height: 95px;
+	line-height: 95px;
+	text-align: center;
+	width: 95px;
+  background: red;
+  background: -webkit-linear-gradient(top,red,orange,yellow,green,blue,indigo,violet);
+  background: -o-linear-gradient(top,red,orange,yellow,green,blue,indigo,violet);
+  background: -moz-linear-gradient(top ,red,orange,yellow,green,blue,indigo,violet);
+  background: linear-gradient(top , red,orange,yellow,green,blue,indigo,violet); 
+  } */
+  .box-1{	  
+	  /* background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+		background: linear-gradient(-65deg,red, blue); */ /* Standard syntax */
+  }
+  .box-2{
+	/* background: linear-gradient(to right, red 70%, blue); */ /* Standard syntax */
+   
+  }
+  .box-3{
+	/* background: linear-gradient(to bottom right, silver , pink); */ /* Standard syntax */	
+  }
+  .box-4{
+	/* background: linear-gradient(to left top, silver , pink); */ /* Standard syntax */
+  }
+  .box-5 {
+	  /* background: radial-gradient(red, green, blue); */ /* Standard syntax */
+	  /* background-image: radial-gradient(circle, red, yellow, green); */ /*circle or ellipse*/
+	  /* background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+	  background-image: radial-gradient(closest-side at 60% 55%, red, green, blue); */
+  }
+
+
+
+
+
+
+
+
